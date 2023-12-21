@@ -1,0 +1,38 @@
+.body{
+  background-image: url("https://static.vecteezy.com/ti/vetor-gratis/t2/11154633-de-volta-ao-fundo-da-escola-gratis-vetor.jpg");
+}
+
+editClass{
+  background-color: forestgreen;
+}
+
+
+.ngfor-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-card-simples{
+  max-width: 300px;
+  max-height: 300px;
+  color: #ffffff;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #3F76B5;
+}
+
+.ngfor-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+.mat-card-simples {
+  width: 80%; /* Largura desejada */
+  margin-bottom: 10px; /* Espaço entre os cartões simples */
+}
+
+

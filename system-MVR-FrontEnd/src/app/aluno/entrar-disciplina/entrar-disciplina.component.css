@@ -1,0 +1,17 @@
+.mat-card-principal{
+  width: 500px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #474b54;
+
+}
+.mat-card-principal button{
+  border-radius: 10px;
+  background-color: #ffffff;
+  color:#212529;
+}

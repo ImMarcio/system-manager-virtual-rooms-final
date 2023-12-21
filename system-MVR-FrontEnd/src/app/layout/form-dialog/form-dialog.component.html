@@ -1,0 +1,23 @@
+<mat-card class="card-main">
+  <mat-card-title>Login</mat-card-title>
+  <div class="example-container">
+    <mat-form-field class="form-field">
+      <mat-label>Digite seu email</mat-label>
+      <input matInput placeholder="pat@example.com" [formControl]="email" required [(ngModel)]="aluno.email">
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+  </div>
+
+
+  <mat-form-field class="form-field">
+    <mat-label>Digite sua senha</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="aluno.senha">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <mat-card-actions>
+    <button mat-raised-button class="button-login" (click)="entrar()">Entrar!</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,19 @@
+.mat-card-principal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  background-color: #444c52;
+  margin: 10px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  justify-content: center;
+  height: 300px;
+
+}
+
+.mat-form-field {
+  margin-left: 5px;
+  height: 85px;
+}

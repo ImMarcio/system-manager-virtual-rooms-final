@@ -1,0 +1,15 @@
+<div class="div-main">
+<mat-card class="dados-aluno">
+  <mat-card-title class="info" style="color: white">{{aluno.nome}}</mat-card-title>
+  <mat-card-subtitle class="info" style="color: white">
+    {{aluno.matricula}}</mat-card-subtitle>
+  <mat-card-subtitle class="info"> {{aluno.email}}</mat-card-subtitle>
+<!--  <mat-card-actions><button (click)="editar()"><mat-icon>edit</mat-icon></button></mat-card-actions>-->
+</mat-card>
+
+<div cdkDropList cdkDropListOrientation="horizontal" class="example-list"
+     (cdkDropListDropped)="drop($event)">
+  <div class="example-box" cdkDrag *ngFor="let disciplina of disciplinas">{{disciplina.nome}}  <button mat-flat-button (click)="entrarDisciplina(disciplina)"><mat-icon>login</mat-icon></button>
+  </div>
+</div>
+</div>
